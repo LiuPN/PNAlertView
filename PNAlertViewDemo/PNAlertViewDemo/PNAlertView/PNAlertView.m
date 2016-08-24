@@ -77,7 +77,7 @@
         
         // 确定按钮
         UIButton *okBtn = [[UIButton alloc] init];
-        [okBtn setBackgroundColor:[UIColor redColor]];
+        [okBtn setBackgroundColor:[UIColor colorWithRed:235/255.0 green:65/255.0 blue:61/255.0 alpha:1.0]];
         [self addSubview:okBtn];
         self.okBtn = okBtn;
         [self.okBtn addTarget:self action:@selector(okBtnClick:) forControlEvents:UIControlEventTouchUpInside];

@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "PNAlertView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "iOS of PNAlertView."
 
   s.homepage     = "https://github.com/LiuPN/PNAlertView"
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
  
   s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/LiuPN/PNAlertView.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/LiuPN/PNAlertView.git", :tag => "1.0.1" }
 
   s.source_files  = "PNAlertView", "PNAlertView/**/*.{h,m}"
   
