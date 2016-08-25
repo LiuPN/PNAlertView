@@ -89,13 +89,10 @@
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content cancelBtnTitle:(NSString *)clBtnTitle cancelBlock:(btnBlock)clBlock okBtnTitle:(NSString *)okBtnTitle okBlock:(btnBlock)okBlock
 {
     if (self = [super init]) {
-        
         // 标题
         self.titleLbl.text = title;
-        
         // 内容
         [self.webView loadHTMLString:content baseURL:nil];
-        
         // 按钮标题
         if (clBtnTitle) {
             [self.cancelBtn setTitle:clBtnTitle forState:UIControlStateNormal];
