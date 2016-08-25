@@ -156,8 +156,6 @@
     });
     
 }
-
-
 /// 取消按钮的点击
 - (void)cancelBtnClick:(UIButton *)cancelBtn
 {
@@ -191,8 +189,6 @@
         self.okBlock();
     }
 }
-
-
 /// 子视图的布局
 - (void)layoutSubviews
 {
@@ -233,7 +229,6 @@
     
     
 }
-
 /// 调整高度
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
