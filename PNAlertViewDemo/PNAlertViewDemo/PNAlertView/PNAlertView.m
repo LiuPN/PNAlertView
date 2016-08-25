@@ -14,6 +14,7 @@
 #define PNScreenHeight [UIScreen mainScreen].bounds.size.height
 
 @interface PNAlertView ()<UIWebViewDelegate>
+
 /// 遮罩层
 @property(nonatomic, weak) UIView *coverV;
 /// titleLbl
@@ -28,9 +29,14 @@
 @property(nonatomic, weak) UIButton *cancelBtn;
 /// 确定按钮
 @property(nonatomic, weak) UIButton *okBtn;
+
 @end
 
 @implementation PNAlertView
+
+/**
+ 初始化方法
+ */
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
@@ -86,6 +92,8 @@
     return self;
 }
 
+
+#pragma mark - 提供的外部方法
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content cancelBtnTitle:(NSString *)clBtnTitle cancelBlock:(btnBlock)clBlock okBtnTitle:(NSString *)okBtnTitle okBlock:(btnBlock)okBlock
 {
     if (self = [super init]) {
@@ -115,6 +123,8 @@
     }
     return self;
 }
+
+#pragma mark - 显示视图方法
 - (void)show
 {
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
@@ -145,10 +155,10 @@
         
     });
     
-
-    // 显示的动画效果
-    
 }
+
+
+/// 取消按钮的点击
 - (void)cancelBtnClick:(UIButton *)cancelBtn
 {
     // 视图消失
@@ -164,6 +174,7 @@
         self.cancelBlock();
     }
 }
+/// 确定按钮的点击
 - (void)okBtnClick:(UIButton *)okBtn
 {
     // 视图消失
@@ -181,6 +192,8 @@
     }
 }
 
+
+/// 子视图的布局
 - (void)layoutSubviews
 {
     [super layoutSubviews];
