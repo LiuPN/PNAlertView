@@ -33,7 +33,6 @@
 @end
 
 @implementation PNAlertView
-
 /**
  初始化方法
  */
@@ -91,8 +90,6 @@
     }
     return self;
 }
-
-
 #pragma mark - 提供的外部方法
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content cancelBtnTitle:(NSString *)clBtnTitle cancelBlock:(btnBlock)clBlock okBtnTitle:(NSString *)okBtnTitle okBlock:(btnBlock)okBlock
 {
@@ -123,7 +120,6 @@
     }
     return self;
 }
-
 #pragma mark - 显示视图方法
 - (void)show
 {
